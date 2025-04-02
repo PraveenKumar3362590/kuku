@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: mykuku
-        image: praveen3362/kuku:latest  # Replace with your actual Docker image name
+        image: praveen3362/kuku:latest  # Replace with your actual Docker image
         ports:
         - containerPort: 80
-        imagePullPolicy: Always
+        imagePullPolicy: Always  # This should be aligned properly
