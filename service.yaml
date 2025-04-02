@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: mykuku
+spec:
+  selector:
+    app: kuku
+  ports:
+    - protocol: TCP
+      port: 80       # Port exposed by the service
+      targetPort: 80  # Port inside the container
+  type: NodePort  # Expose the service through Minikube
+
